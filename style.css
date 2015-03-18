@@ -30,4 +30,26 @@ html, body {
 	background-image: url(assets/images/ori1.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
+
+	color: #dee;
+	font-family: "Lato", sans-serif;
+}
+
+.section h1 {
+	font-weight: 700;
+}
+
+.text-block {
+	display: block;
+	width: 50%;
+}
+
+.text-block.left {
+	float: left;
+	margin-left: 10%;
+}
+
+.text-block.right {
+	float: right;
+	margin-right: 10%;
 }
