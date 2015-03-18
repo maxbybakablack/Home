@@ -5,25 +5,25 @@ $(document).ready(function() {
 		menu: null,
         direction: 'vertical',
         verticalCentered: true,
-        sectionsColor: [],
-        anchors: [],
+        sectionsColor: ['#303F9F', '#1976D2', '#0288D1', '#0097A7'],
+        anchors: ['intro', 'competences', 'formations', 'contact'],
         scrollingSpeed: 700,
         easing: 'swing',
         loopBottom: true,
-        loopTop: false,
+        loopTop: true,
         css3: true,
         navigation: {
-            'textColor': '#000',
-            'bulletsColor': '#000',
+            'textColor': '#cdd',
+            'bulletsColor': '#cdd',
             'position': 'right',
-            'tooltips': ['section1', 'section2', 'section3']
+            'tooltips': ['Intro', 'Compétences', 'Formation', "Contact"]
         },
         normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
         touchSensitivity: 5,
         keyboardScrolling: true,
         sectionSelector: '.section',
-        animateAnchor: false,
+        animateAnchor: true,
 
         //events
         onLeave: function(index, nextIndex, direction){},

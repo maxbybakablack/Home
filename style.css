@@ -23,16 +23,16 @@ html, body {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	box-shadow: 0 -5px 10px rgba(0,0,0,.5);
+	box-shadow: 0 5px 100px rgba(0,0,0,.1);
+	font-family: "Lato", sans-serif;
+	color: #dee;
+
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .section:first-child {
 	background-image: url(assets/images/ori1.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-
-	color: #dee;
-	font-family: "Lato", sans-serif;
 }
 
 .section h1 {
@@ -52,4 +52,20 @@ html, body {
 .text-block.right {
 	float: right;
 	margin-right: 10%;
+}
+
+.text-block.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+	.text-block {
+		width: 90%;
+	}
+	.text-block.left, .text-block.right, .text-block.center {
+		float: left;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 }
