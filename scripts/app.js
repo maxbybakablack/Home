@@ -30,4 +30,8 @@ $(document).ready(function() {
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},
 	});
+
+	$(".timeline-element").each(function() {
+		$(this).append('<div class="timeline-circle"></div>');
+	});
 });
